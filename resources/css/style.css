@@ -1,0 +1,869 @@
+@font-face {
+    font-family: MarkerFelt;
+    src: url("@/fonts/markerfelt_wide.ttf") format("truetype");
+}
+@font-face {
+    font-family: RussoOne;
+    src: url("@/fonts/RussoOne-Regular.ttf") format("truetype");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body.lock{
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1208px;
+    margin: 0 auto;
+}
+/*HEADER*/
+.header{
+    background: #000000;
+    color: aliceblue;
+}
+.header .container .header-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.header .container .header-inner .logo{
+    font-family: MarkerFelt, serif;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.header .container .header-inner .logo .logo-img img{
+    width: 30px;
+    padding: 0 5px;
+}
+
+.header .container .header-inner .header-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.header .container .header-inner .header-menu .menu-icon{
+    display: none;
+}
+.header .container .header-inner .header-menu .navbar{
+    padding: 0 10px;
+    min-width: 600px;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .container .header-inner .header-menu  .navbar a{
+    display: block;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-decoration: none;
+    color: aliceblue;
+    transition: 1s;
+}
+.header .container .header-inner .header-menu  .navbar a:hover{
+    letter-spacing: 1px;
+}
+
+/*BANNER*/
+.banner{
+    width: 100%;
+    min-height: 854px;
+    background: linear-gradient(86.16deg, rgba(54, 53, 56, 0.97) 8.95%, rgba(69, 68, 72, 0.87) 42.8%, rgba(49, 48, 56, 0.55) 58.95%, rgba(96, 96, 96, 0.42) 65.49%, rgba(255, 255, 255, 0) 72%, rgba(255, 255, 255, 0) 72%), url("@/images/img.png") right/90% 100% no-repeat;
+}
+.banner .container .banner-inner{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.banner .container .banner-inner h1{
+    font-family: 'RussoOne', serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 133px;
+    color: #5CC4F1;
+}
+.banner .container .banner-inner .banner-content{
+}
+.banner .container .banner-inner .banner-content div{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.banner .container .banner-inner .banner-content div i{
+    color: #5CC4F1;
+}
+.banner .container .banner-inner .banner-content div p{
+    padding: 10px 20px;
+    font-family: 'Inter',sans-serif;
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+}
+
+/*BENEFITS*/
+.benefits{
+    width: 100%;
+    height: 100%;
+}
+.benefits .container .benefits-inner{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits .container .benefits-inner .benefits-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits .container .benefits-inner h2{
+    font-family: 'RussoOne', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 120px;
+}
+.benefits .container .benefits-inner .benefits-list .b-item{
+    border: 4px solid #5CC4F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 20px;
+}
+.benefits .container .benefits-inner .benefits-list .b-item div{
+    padding-top: 5px;
+}
+.benefits .container .benefits-inner .benefits-list .b-item .b-img img{
+    width: 170px;
+}
+.benefits .container .benefits-inner .benefits-list .b-item h5{
+    font-family: 'Inter',sans-serif;
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 48px;
+}
+.benefits .container .benefits-inner .benefits-list .b-item .b-text{
+    font-family: 'Inter',sans-serif;
+    margin: 8px 15px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+/*SERVICES*/
+.services{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #5CC4F1 100%);
+}
+.services .container .services-inner{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services .container .services-inner h1{
+    font-family: 'RussoOne', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 120px;
+}
+.services .container .services-inner .services-content{
+    display: flex;
+    flex-direction: column;
+}
+.services .container .services-inner .services-content .s-item{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.services .container .services-inner .services-content .s-item .s-text{
+    margin-right: 30px;
+}
+.services .container .services-inner .services-content .s-item .s-text h5{
+    font-family: 'RussoOne', sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 77px;
+}
+
+.services .container .services-inner .services-content .s-item .s-text p {
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+}
+.services .container .services-inner .services-content .s-item .s-img img{
+    width: 380px;
+}
+
+/*CONSULTING*/
+.consulting{
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+    background: url("@/images/consulting.png") 0 0/100% 100% no-repeat;
+}
+.consulting .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.consulting .container .consulting-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.consulting .container .consulting-inner .consulting-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.consulting .container .consulting-inner .consulting-block h2{
+    font-family: 'RussoOne', sans-serif;
+    font-weight: 400;
+    padding: 15px 25px;
+    font-size: 60px;
+    line-height: 84px;
+    text-align: center;
+}
+.consulting .container .consulting-inner .consulting-block .consulting-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.consulting .container .consulting-inner .consulting-block .consulting-content .cons-description{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    max-width: 520px;
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+}
+.consulting .container .consulting-inner .consulting-block .consulting-content .cons-form{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label p{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    color: #000000;
+}
+.consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label input{
+
+    background: #D9D9D9;
+    width: 430px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 15px;
+    color: #000000;
+}
+.consulting .container .consulting-inner .consulting-block .consulting-content .cons-form button{
+    background: #1D4672;
+    width: 320px;
+    margin: 30px 0;
+    border: #1D4672;
+    padding: 10px 15px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+/*FOOTER*/
+.footer{
+    width: 100%;
+    background: #000000;
+}
+.footer .container .footer-inner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .container .footer-inner .copyright{
+    font-family: 'Inter',sans-serif;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #D9D9D9;
+    line-height: 29px;
+}
+
+.footer .container .footer-inner .contacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .container .footer-inner .contacts .logo{
+    font-family: MarkerFelt, serif;
+    padding: 0 20px;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer .container .footer-inner .contacts .contacts-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .container .footer-inner .contacts .contacts-content .phones a{
+    text-decoration: none;
+    font-family: 'Inter',sans-serif;
+    padding: 0 40px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #D9D9D9;
+    line-height: 29px;
+}
+
+.footer .container .footer-inner .contacts .social-links a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    background: #125688;
+    margin: 5px 2px;
+    color: aliceblue;
+}
+
+.footer .container .footer-inner .logo .logo-img img{
+    width: 30px;
+    padding: 0 5px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+
+    .header .container .header-inner .header-menu  .navbar{
+        min-width: 400px;
+    }
+
+    .header .container .header-inner .header-menu  .navbar a{
+        font-size: 14px;
+    }
+
+    /*BANNER*/
+    .banner .container .banner-inner h1{
+        font-size: 80px;
+    }
+
+    .banner .container .banner-inner .banner-content div p{
+        font-size: 20px;
+    }
+
+    .banner .container .banner-inner .banner-content div i{
+        font-size: 2em;
+    }
+
+/*    BENEFITS*/
+    .benefits .container .benefits-inner h2{
+        font-size: 60px;
+    }
+    .benefits .container .benefits-inner .benefits-list .b-item .b-img img{
+        width: 140px;
+    }
+    .benefits .container .benefits-inner .benefits-list .b-item{
+        margin: 38px 15px;
+    }
+    .benefits .container .benefits-inner .benefits-list .b-item h5{
+        font-size: 18px;
+    }
+
+    .benefits .container .benefits-inner .benefits-list .b-item .b-text{
+        font-size: 18px;
+    }
+/*    SERVICES*/
+    .services .container .services-inner h1{
+        font-size: 58px;
+    }
+
+    .services .container .services-inner .services-content .s-item{
+        margin-top: 34px;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-text h5{
+        font-size: 30px;
+    }
+    .services .container .services-inner .services-content .s-item .s-text p{
+        font-size: 18px;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-img img{
+        width: 350px;
+
+    }
+/*    Consulting */
+    .consulting .container .consulting-inner .consulting-block h2{
+        font-size: 48px;
+    }
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-description{
+        font-size: 25px;
+    }
+
+/*    FOOTER*/
+    .footer .container .footer-inner .copyright{
+        font-size: 18px;
+    }
+    .footer .container .footer-inner .contacts .social-links a{
+        width: 35px;
+    }
+
+}
+
+@media (max-width: 992px){
+    .container{
+        max-width:  750px;
+    }
+/*    BANNER*/
+    .banner {
+        min-height: 600px;
+    }
+    .banner .container .banner-inner h1{
+        font-size: 65px;
+    }
+    .banner .container .banner-inner .banner-content div{
+        padding-top: 15px;
+    }
+
+    .banner .container .banner-inner .banner-content div p{
+        font-size: 15px;
+    }
+
+/*    BENEFITS*/
+    .benefits .container .benefits-inner{
+        padding: 60px;
+    }
+    .benefits .container .benefits-inner h2{
+        font-size: 48px;
+    }
+
+    .benefits .container .benefits-inner .benefits-list{
+        flex-direction: column;
+    }
+    .benefits .container .benefits-inner .benefits-list .b-item{
+        max-width: 400px;
+        margin: 30px 20px;
+    }
+/* SERVICES*/
+    .services .container .services-inner{
+        padding: 20px;
+    }
+
+    .services .container .services-inner .services-content .s-item{
+        margin: 23px 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .services .container .services-inner h1{
+        font-size: 45px;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-img img{
+        width: 500px;
+        max-height: 300px;;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-text h5{
+        font-size: 22px;
+    }
+    .services .container .services-inner .services-content .s-item .s-text p{
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+/*CONSULTING*/
+
+    .consulting .container .consulting-inner .consulting-block h2{
+        font-size: 38px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-description{
+        font-size: 15px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label p{
+        font-size: 15px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label input{
+        width: 380px;
+        padding: 7px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form button{
+        width: 250px;
+        font-size: 18px;
+    }
+/*    FOOTER*/
+
+    .footer .container .footer-inner .contacts .social-links a{
+        padding: 5px;
+    }
+
+    .footer .container .footer-inner .contacts .contacts-content .phones a{
+        font-size: 17px;
+        padding: 0 20px;
+    }
+
+    .footer .container .footer-inner .copyright{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .container{
+        max-width:  none;
+    }
+/*    HEADER*/
+
+    .header .container .header-inner .header-menu  .menu-icon{
+        z-index: 5;
+        display: block;
+        position: relative;
+        top: 25px;
+        right: 30px;
+        width: 30px;
+        height: 18px;
+        cursor: pointer;
+
+    }
+    .header .container .header-inner .header-menu  .menu-icon span,
+    .header .container .header-inner .header-menu  .menu-icon::before,
+    .header .container .header-inner .header-menu  .menu-icon::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #ffff;
+    }
+    .header .container .header-inner .header-menu  .menu-icon::before,
+    .header .container .header-inner .header-menu  .menu-icon::after{
+        content: '';
+    }
+    .header .container .header-inner .header-menu  .menu-icon::before{
+        top: 0;
+    }
+    .header .container .header-inner .header-menu  .menu-icon::after{
+        bottom: 0;
+    }
+    .header .container .header-inner .header-menu  .menu-icon span{
+        top: 50%;
+        transform: translate(0px, -50%);
+    }
+
+    .header .container .header-inner .header-menu .navbar.active{
+        left: 0;
+    }
+
+    .header .container .header-inner .header-menu .menu-icon.active span{
+        transform: scale(0) translate(0px, -50%);
+    }
+    .header .container .header-inner .header-menu .menu-icon.active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    .header .container .header-inner .header-menu .menu-icon.active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+
+    .header .container .header-inner .header-menu .navbar{
+        position: fixed;
+        top: 0;
+        left: -160%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.9);
+        transition: left 0.3s ease 0s;
+        z-index: 2;
+        overflow: auto;
+    }
+
+    .header .container .header-inner .header-menu .navbar a{
+        margin: 20px;
+        font-size: 18px;
+    }
+
+        /*    BANNER*/
+
+    .banner{
+        min-height: 400px;
+    }
+
+    .banner .container .banner-inner{
+        padding: 60px;
+    }
+
+    .banner .container .banner-inner h1{
+        font-size: 50px;
+        line-height: 80px;
+    }
+
+    .banner .container .banner-inner .banner-content div p{
+        font-size: 12px;
+    }
+
+    .banner .container .banner-inner .banner-content div{
+        padding-top: 5px;
+    }
+
+    .banner .container .banner-inner .banner-content div i{
+        font-size: 1em;
+    }
+/*    BENEFITS*/
+    .benefits .container .benefits-inner{
+        padding: 45px;
+    }
+    .benefits .container .benefits-inner h2{
+        font-size: 38px;
+        line-height: 80px;
+    }
+    .benefits .container .benefits-inner .benefits-list .b-item{
+        max-width: 300px;
+    }
+
+/*    SERVICES*/
+    .services .container .services-inner h1{
+        font-size: 35px;
+        line-height: 80px;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-img img{
+        width: 400px;
+        max-height: 180px;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-text h5{
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .services .container .services-inner .services-content .s-item .s-text p{
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+/*    CONSULTING*/
+    .consulting .container .consulting-inner .consulting-block h2{
+        font-size: 30px;
+        line-height: 68px;
+        padding: 8px 25px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content{
+        margin-top: 10px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-description{
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form{
+        margin: 5px 10px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label p{
+        font-size: 10px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label input{
+        width: 320px;
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form button{
+        width: 200px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 435px){
+
+/*    BANNER*/
+
+    .banner .container .banner-inner{
+        padding: 50px;
+    }
+
+    .banner .container .banner-inner h1{
+        font-size: 38px;
+        line-height: 68px;
+    }
+    .banner .container .banner-inner .banner-content div p{
+        font-size: 9px;
+    }
+
+    .banner .container .banner-inner .banner-content div{
+        padding-top: 0;
+    }
+
+    .banner .container .banner-inner .banner-content div i{
+        font-size: 0.8em;
+    }
+
+/*    BENEFITS*/
+    .benefits .container .benefits-inner{
+        padding: 20px;
+    }
+    .benefits .container .benefits-inner h2{
+        font-size: 28px;
+        line-height: 68px;
+    }
+    .benefits .container .benefits-inner .benefits-list .b-item{
+        max-width: 300px;
+    }
+
+    .benefits .container .benefits-inner .benefits-list .b-item{
+        max-width: 250px;
+        margin: 20px 5px;
+    }
+
+    .benefits .container .benefits-inner .benefits-list .b-item .b-img img{
+        width: 90px;
+    }
+
+    .benefits .container .benefits-inner .benefits-list .b-item h5{
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .benefits .container .benefits-inner .benefits-list .b-item .b-text{
+        font-size: 9px;
+        line-height: 20px;
+    }
+
+/*    SERVICES*/
+    .services .container .services-inner h1{
+        font-size: 25px;
+        line-height: 60px;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-img img{
+        width: 250px;
+        max-height: 120px;
+    }
+
+    .services .container .services-inner .services-content .s-item .s-text h5{
+        font-size: 13px;
+        line-height: 35px;
+    }
+    .services .container .services-inner .services-content .s-item .s-text p{
+        font-size: 8px;
+        line-height: 15px;
+    }
+
+    /*    CONSULTING*/
+    .consulting .container .consulting-inner .consulting-block h2{
+        font-size: 20px;
+        line-height: 50px;
+        padding: 8px 25px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content{
+        margin-top: 10px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-description{
+        font-size: 9px;
+        line-height: 15px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form{
+        margin: 0 10px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label p{
+        font-size: 7px;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form label input{
+        width: 250px;
+        padding: 0;
+    }
+
+    .consulting .container .consulting-inner .consulting-block .consulting-content .cons-form button{
+        width: 150px;
+        font-size: 9px;
+    }
+
+/*    FOOTER*/
+
+    .footer .container .footer-inner .contacts .logo{
+        padding: 0 8px;
+    }
+
+    .footer .container .footer-inner .contacts .social-links a{
+        padding: 2px;
+    }
+
+    .footer .container .footer-inner .contacts .contacts-content .phones a{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .footer .container .footer-inner .copyright{
+        font-size: 7px;
+    }
+}
